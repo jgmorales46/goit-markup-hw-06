@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <link rel="stylesheet" href="./css/styles.css" />
-    <link
-      rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
-    />
+    <!-- <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css"/> -->
+    <link rel="stylesheet" href="./css/modern-normalize.css">
   </head>
 
   <body class="portfolio-main">
@@ -285,6 +283,31 @@
               </a>
             </li>
           </ul>
+        </aside>
+
+        <aside class="subscribe">
+          <h3 id="subscribe">SUSCRÍBASE AL BOLETÍN INFORMATIVO</h3>
+          <form class="subscribe_form" name="subscribe_form" autocomplete="on">
+            <label for="subs-email"></label>
+            <input
+              id="subs_email"
+              class="subs__email"
+              type="email"
+              name="subs_email"
+              placeholder="Correo electrónico"
+            />
+            <button class="subs__button" type="submit">
+              Suscríbase
+              <svg
+                class="subs__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24px"
+                height="24px"
+              >
+                <use href="./images/icons/icons.svg#sendicon"></use>
+              </svg>
+            </button>
+          </form>
         </aside>
       </div>
     </footer>

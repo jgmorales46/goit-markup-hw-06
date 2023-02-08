@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
     <!-- <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css"> -->
+    <link rel="stylesheet" href="./css/modern-normalize.css">
 
     <title>WebStudio</title>
   </head>
@@ -50,19 +51,99 @@
     <!-- main content section  -->
     <main>
       <!-- Hero section  -->
-      <section class="hero bg-hero">
+      <section class="hero bg-hero" id="estudio">
         <h1 class="hero-title">efective solutions for your bussines</h1>
-        
-        <button data-modal-open class="button-primary" type="button">request or service</button>
-        
+
+        <button data-modal-open class="button-primary" type="button">
+          request or service
+        </button>
+
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptatem quisquam culpa distinctio
-               iste autem dignissimos! Eos et dolorum reiciendis placeat, unde optio. Odio fugiat excepturi, nisi magni amet natus.
-            Laboriosam hic excepturi quis. Iste temporibus ipsum nulla sed asperiores omnis modi, voluptate eligendi
-             ullam eos odio expedita unde beatae repellendus maiores quaerat excepturi velit quia itaque sint voluptatibus atque!
-            </p>
-            <button data-modal-close >X</button>
+            <button class="modal__close" data-modal-close>X</button>
+
+            <form name="customer-data" autocomplete="on">
+              <div class="form" role="group" aria-labelledby="subscribe">
+                <p class="form-title" id="subscribe">
+                  Deje sus datos, nos contactaremos con usted
+                </p>
+
+                <label class="form__label" for="username">Nombre</label>
+                <input
+                  class="form__input"
+                  name="username"
+                  type="text"
+                  id="username"
+                  required
+                />
+                <svg
+                  class="form__person-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12px"
+                  height="12px"
+                >
+                  <use href="./images/SVG/icons.svg#personicon"></use>
+                </svg>
+
+                <label class="form__label" for="phone">Teléfono</label>
+                <input
+                  class="form__input"
+                  name="phone"
+                  type="tel"
+                  id="phone"
+                  required
+                />
+                <svg
+                  class="form__tel-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="13px"
+                  height="13px"
+                >
+                  <use href="./images/SVG/icons.svg#telicon"></use>
+                </svg>
+
+                <label class="form__label" for="e-mail">E-mail</label>
+                <input
+                  class="form__input"
+                  name="email"
+                  type="email"
+                  id="e-mail"
+                  required
+                />
+                <svg
+                  class="form__envelope-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15px"
+                  height="12px"
+                >
+                  <use href="./images/SVG/icons.svg#envelopeicon"></use>
+                </svg>
+
+                <label class="form__label" for="comments">Comentarios</label>
+                <textarea
+                  class="form__textarea"
+                  name="comments"
+                  id="comments"
+                  rows="10"
+                  placeholder="Introduzca el texto"
+                ></textarea>
+
+                <div class="form__tyc">
+                  <input
+                    class="form__checkbox"
+                    name="terms-conditions"
+                    type="checkbox"
+                    value="tyc"
+                    id="tyc"
+                  />
+                  <label class="form__terms-conditions" for="tyc"
+                    >Estoy de acuerdo con el boletín informativo y acepto los
+                    Términos y Condiciones</label
+                  >
+                </div>
+                <button class="form__button" type="submit">Enviar</button>
+              </div>
+            </form>
           </div>
         </div>
       </section>
@@ -376,6 +457,7 @@
             </li>
           </ul>
         </address>
+
         <aside>
           <p>FIND US</p>
           <ul>
@@ -408,6 +490,31 @@
               </a>
             </li>
           </ul>
+        </aside>
+
+        <aside class="subscribe">
+          <h3 id="subscribe">SUSCRÍBASE AL BOLETÍN INFORMATIVO</h3>
+          <form class="subscribe_form" name="subscribe_form" autocomplete="on">
+            <label for="subs-email"></label>
+            <input
+              id="subs_email"
+              class="subs__email"
+              type="email"
+              name="subs_email"
+              placeholder="Correo electrónico"
+            />
+            <button class="subs__button" type="submit">
+              Suscríbase
+              <svg
+                class="subs__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24px"
+                height="24px"
+              >
+                <use href="./images/SVG/icons.svg#sendicon"></use>
+              </svg>
+            </button>
+          </form>
         </aside>
       </div>
     </footer>
