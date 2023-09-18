@@ -4,75 +4,100 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebStudio</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-    <!-- <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css"/> -->
-    <link rel="stylesheet" href="./css/modern-normalize.css">
+    <!-- Primeramente el normalizador -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Porftolio</title>
   </head>
-
-  <body class="portfolio-main">
-    <!-- Header section -->
-    <header class="page-header">
-      <div class="container">
-        <nav>
-          <!-- Logo  -->
-          <a class="logo" href="./index.html">WebStudio</a>
-          <!-- menu  -->
-          <ul class="nav-menu list">
-            <li><a class="page" href="./index.html">studio</a></li>
-            <li>
-              <a class="page current" href="./portfolio.html">portfolio</a>
-            </li>
-            <li><a class="page" href="">contact</a></li>
-          </ul>
-        </nav>
-        <!-- contacts  -->
-        <ul class="contacts-menu list">
-          <li>
-            <a class="item" href="#">
-              <svg class="icon email">
-                <use href="./images/SVG/sprite-sheet.svg#email"></use>
-              </svg>
-              info@devstudio.com
-            </a>
+  <body>
+    <header>
+      <nav class="container navigation__container pv-main">
+        <ul class="hero__navigation list p-0">
+          <li class="">
+            <a class="webstudio link link-font-style" href="./index.html"
+              >WebStudio</a
+            >
           </li>
-
           <li>
-            <a class="item" href="#">
-              <svg class="icon smartphone">
-                <use href="./images/SVG/sprite-sheet.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
+            <a class="link link-font-style" href="./index.html">Studio</a>
+          </li>
+          <li>
+            <a
+              class="link link-font-style header_menu current"
+              href="./portfolio.html"
+              >Portafolio</a
+            >
+          </li>
+          <li>
+            <a class="link link-font-style" href="./contacts.html">contacts</a>
           </li>
         </ul>
-      </div>
+
+       
+
+
+
+
+
+        <ul class="hero__contact box__header list p-0">
+          <li class="gallery__item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="link icon link-font-style"
+            >
+              <svg class="email" width="16px" height="12px">
+                <use
+                  class="logo"
+                  href="./images/icons/symbol-defs.svg#icon-logo-email"
+                ></use>
+              </svg>
+
+              info@devstudio.com</a
+            >
+          </li>
+
+          <li class="gallery__item">
+            <a href="tel:+12127724150" class="link icon link-font-style">
+              <svg class="telefono" width="10px" height="16px">
+                <use
+                  class="logo"
+                  href="./images/icons/symbol-defs.svg#icon-logo-telefono"
+                ></use></svg>+1 212-772-4150</a > 
+          </li>
+        </ul>
+      </nav>
     </header>
-
+ <hr>
     <main>
-      <section class="portfolio">
-        <div class="container">
-          <!-- Menu tabs  -->
-          <ul class="menu list">
-            <li><button class="button current" type="button">All</button></li>
-            <li><button class="button" type="button">Web-Sites</button></li>
-            <li><button class="button" type="button">App</button></li>
-            <li><button class="button" type="button">Design</button></li>
-            <li><button class="button" type="button">Marketing</button></li>
-          </ul>
+      <section class="container container__botones__portafolio">
+        <ul class="buttons buttom__portafolio list p-0">
+          <li><button type="button" class="button">All</button></li>
+          <li><button type="button" class="button">Web-sites</button></li>
+          <li><button type="button" class="button">Apps</button></li>
+          <li><button type="button" class="button">Design</button></li>
+          <li><button type="button" class="button">Marketing</button></li>
+        </ul>
+      </section>
 
-          <!-- card list  -->
-          <ul class="list cards">
-            <li>
-              <a href="#" class="link">
-                <div class="box">
-                  <img
-                    src="./images/img_portfolio1.jpg"
-                    alt="TecnoCrack website"
-                    width="370"
-                  />
+     
 
-                  <div class="overlay">
+
+
+      <section class="section">
+        <div class="">
+          <ul class="container container__porfolio list p-0">
+            
+            <li class="item">
+            <div class="box">
+            
+              
+                <img src="images/imga.jpg" alt="web-site" width: 370px; height:
+                294px; />
+
+                <div class="overlay">
                     <p>
                       <code
                         >Technoduck is a state-of-the-art coronavirus
@@ -82,234 +107,294 @@
                       >
                     </p>
                   </div>
-                </div>
-
-                <h2 class="portfolio-title">TecnoCrack</h2>
-                <p class="portfolio-text">Sitio Web</p>
-              </a>
+                  </div>
+                <h4>Technoduck</h4>
+                <p>Web-site</p>
+              
             </li>
 
-            <li>
-              <a href="#" class="link">
-                <div class="box">
-                  <img
-                    src="./images/img_portfolio2.jpg"
-                    alt="Poster New Orlean vs Golden Star"
-                    width="370%"
-                  />
 
-                  <div class="overlay"></div>
-                </div>
+            <li class="item">
+               <div class="box">
+              
+                <img src="images/imga (1).jpg" alt="Design" width: 370px;
+                height: 294px; />
 
-                <h2 class="portfolio-title">
-                  Poster New Orlean vs Golden Star
-                </h2>
-                <p class="portfolio-text">Design</p>
-              </a>
+<div class="overlay">
+                    <p>
+                      <code
+                        >Technoduck is a state-of-the-art coronavirus
+                        distribution platform. Companies use this platform for
+                        hola espionage and attacks on competitors' secure
+                        servers.</code
+                      >
+                    </p>
+                  </div>
+</div>
+                <h4>Poster New Orlean vs Golden Star</h4>
+                <p>Design</p>
+            
             </li>
 
-            <li>
-              <a href="#" class="link">
-                <div class="box">
-                  <img
-                    src="./images/img_portfolio3.jpg"
-                    alt="Seafood Restaurant App"
-                    width="370%"
-                  />
+            <li class="item">
+               <div class="box">
+              
+                <img src="images/imga (2).jpg" alt="Apps" width: 370px; height:
+                294px; />
 
-                  <div class="overlay"></div>
-                </div>
-
-                <h2 class="portfolio-title">Seafood Restaurant</h2>
-                <p class="portfolio-text">App</p>
-              </a>
+                <div class="overlay">
+                    <p>
+                      <code
+                        >Technoduck is a state-of-the-art coronavirus
+                        distribution platform. Companies use this platform for
+                        hola espionage and attacks on competitors' secure
+                        servers.</code
+                      >
+                    </p>
+                  </div>
+                  </div>
+                <h4>Seafood Restaurant</h4>
+                <p>Apps</p>
+              
             </li>
 
-            <li>
-              <a href="#" class="link">
-                <div class="box">
-                  <img
-                    src="./images/img_portfolio4.jpg"
-                    alt="Project Prime Marketing"
-                    width="370%"
-                  />
+            <li class="item">
+               <div class="box">
+              
+                <img src="images/imga (3).jpg" alt="Marketing" width: 370px;
+                height: 294px; />
 
-                  <div class="overlay"></div>
-                </div>
+<div class="overlay">
+                    <p>
+                      <code
+                        >Technoduck is a state-of-the-art coronavirus
+                        distribution platform. Companies use this platform for
+                        hola espionage and attacks on competitors' secure
+                        servers.</code
+                      >
+                    </p>
+                  </div></div>
 
-                <h2 class="portfolio-title">Project Prime</h2>
-                <p class="portfolio-text">Marketing</p>
-              </a>
+                <h4>Project Prime</h4>
+                <p>Marketing</p>
+             
             </li>
 
-            <li>
-              <a href="#" class="link">
-                <div class="box">
-                  <img
-                    src="./images/img_portfolio5.jpg"
-                    alt="Project Prime Marketing"
-                    width="370%"
-                  />
-
-                  <div class="overlay"></div>
-                </div>
-
-                <h2 class="portfolio-title">Project Boxes</h2>
-                <p class="portfolio-text">App</p>
-              </a>
+            <li class="item">
+               <div class="box">
+              <article>
+                <img src="images/imga (4).jpg" alt="Apps" width: 370px; height:
+                294px; />
+                <div class="overlay">
+                    <p>
+                      <code
+                        >Technoduck is a state-of-the-art coronavirus
+                        distribution platform. Companies use this platform for
+                        hola espionage and attacks on competitors' secure
+                        servers.</code
+                      >
+                    </p>
+                  </div></div>
+                <h4>Project Boxes</h4>
+                <p>Apps</p>
+             
             </li>
 
-            <li>
-              <a href="#" class="link">
-                <div class="box">
-                  <img
-                    src="./images/img_portfolio6.jpg"
-                    alt="Project Prime Marketing"
-                    width="370%"
-                  />
+            <li class="item">
+               <div class="box">
+              <article>
+                <img src="images/imga (5).jpg" alt="web-site" width: 370px;
+                height: 294px; />
 
-                  <div class="overlay"></div>
-                </div>
-                <h2 class="portfolio-title">Inspiration has no Borders</h2>
-                <p class="portfolio-text">App</p>
-              </a>
+<div class="overlay">
+                    <p>
+                      <code
+                        >Technoduck is a state-of-the-art coronavirus
+                        distribution platform. Companies use this platform for
+                        hola espionage and attacks on competitors' secure
+                        servers.</code
+                      >
+                    </p>
+                  </div></div>
+
+                <h4>Inspiration has no Bordes</h4>
+                <p>Web-site</p>
+             
             </li>
 
-            <li>
-              <a href="#" class="link">
-                <div class="box">
-                  <img
-                    src="./images/img_portfolio7.jpg"
-                    alt="Project Prime Marketing"
-                    width="370%"
-                  />
+            <li class="item">
+               <div class="box">
+              <article>
+                <img src="images/imga (6).jpg" alt="Design" width: 370px;
+                height: 294px; />
 
-                  <div class="overlay"></div>
-                </div>
-                <h2 class="portfolio-title">Limited Edition</h2>
-                <p class="portfolio-text">Design</p>
-              </a>
+<div class="overlay">
+                    <p>
+                      <code
+                        >Technoduck is a state-of-the-art coronavirus
+                        distribution platform. Companies use this platform for
+                        hola espionage and attacks on competitors' secure
+                        servers.</code
+                      >
+                    </p>
+                  </div></div>
+
+                <h4>Limited Edition</h4>
+                <p>Design</p>
+             
             </li>
 
-            <li>
-              <a href="#" class="link">
-                <div class="box">
-                  <img
-                    src="./images/img_portfolio8.jpg"
-                    alt="Project Prime Marketing"
-                    width="370%"
-                  />
+            <li class="item">
+               <div class="box">
+              <article>
+                <img src="images/imga (7).jpg" alt="Marketing" width: 370px;
+                height: 294px; />
 
-                  <div class="overlay"></div>
-                </div>
-                <h2 class="portfolio-title">Project LAB</h2>
-                <p class="portfolio-text">Marketing</p>
-              </a>
+<div class="overlay">
+                    <p>
+                      <code
+                        >Technoduck is a state-of-the-art coronavirus
+                        distribution platform. Companies use this platform for
+                        hola espionage and attacks on competitors' secure
+                        servers.</code
+                      >
+                    </p>
+                  </div></div>
+
+                <h4>Project LAB</h4>
+                <p>Marketing</p>
+             
             </li>
 
-            <li>
-              <a href="#" class="link">
-                <div class="box">
-                  <img
-                    src="./images/img_portfolio9.jpg"
-                    alt="Project Prime Marketing"
-                    width="370%"
-                  />
+            <li class="item">
+               <div class="box">
+              <article>
+                <img src="images/imga (8).jpg" alt="Apps" width: 370px; height:
+                294px; />
 
-                  <div class="overlay"></div>
-                </div>
-                <h2 class="portfolio-title">Growing Bussines</h2>
-                <p class="portfolio-text">App</p>
-              </a>
+                <div class="overlay">
+                    <p>
+                      <code
+                        >Technoduck is a state-of-the-art coronavirus
+                        distribution platform. Companies use this platform for
+                        hola espionage and attacks on competitors' secure
+                        servers.</code
+                      >
+                    </p>
+                  </div></div>
+                <h4>Growing Bussiness</h4>
+                <p>Apps</p>
+             
             </li>
+
           </ul>
         </div>
       </section>
     </main>
 
-    <footer>
-      <a class="logo" href="">WebStudio</a>
-      <div class="container">
-        <address>
-          <ul>
-            <li>
-              <a
-                class="contact"
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Kiev, avenida. Lesy Ukrainkiy, 26</a
-              >
-            </li>
-            <li>
-              <a class="contact" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="contact" href="tel:380961111111">+38 096 111 11 11</a>
-            </li>
-          </ul>
-        </address>
-        <aside>
-          <p>FIND US</p>
-          <ul>
-            <li>
-              <a href="#">
-                <svg class="icon" width="20" height="20">
-                  <use href="./images/SVG/icons.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="icon" width="20" height="20">
-                  <use href="./images/SVG/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="icon" width="20" height="20">
-                  <use href="./images/SVG/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="icon" width="20" height="20">
-                  <use href="./images/SVG/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </aside>
+   
 
-        <aside class="subscribe">
-          <h3 id="subscribe">SUSCRÍBASE AL BOLETÍN INFORMATIVO</h3>
-          <form class="subscribe_form" name="subscribe_form" autocomplete="on">
-            <label for="subs-email"></label>
-            <input
-              id="subs_email"
-              class="subs__email"
-              type="email"
-              name="subs_email"
-              placeholder="Correo electrónico"
-            />
-            <button class="subs__button" type="submit">
-              Suscríbase
-              <svg
-                class="subs__icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24px"
-                height="24px"
-              >
-                <use href="./images/icons/icons.svg#sendicon"></use>
-              </svg>
-            </button>
-          </form>
-        </aside>
-      </div>
+     <footer>
+      <address class="footer container">
+        <div class="prueba">
+          <div class="text__footer p-0">
+            <a class="webstudio link" href="./index.html">WebStudio</a> <br />
+            <p>695 Park Ave, New York, NY 10065,</p>
+            <p>United States</p>
+          </div>
+
+          <div class="box_footer">
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a href="tel:+12127724150">+1 212-772-4150</a>
+          </div>
+        </div>
+
+
+
+
+
+
+        
+        <div class="container__redes__footer">
+          <h3 class="encuentranos m-0">ENCUENTRENOS EN</h3>
+          <ul class="icons__list__footer list p-0">
+            <li class="icons__item__footer">
+              <a href="" class="icons__link__footer ">
+                <svg class="iconos__footer" width="20px" height="20px">
+                  <use
+                    href="./images/icons/symbol-defs.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="icons__item__footer">
+              <a href="" class="icons__link__footer">
+                <svg class="iconos__footer" width="20px" height="20px">
+                  <use href="./images/icons/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="icons__item__footer">
+              <a href="" class="icons__link__footer ">
+                <svg class="iconos__footer" width="20px" height="20px">
+                  <use
+                    href="./images/icons/symbol-defs.svg#icon-facebook"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="icons__item__footer">
+              <a href="" class="icons__link__footer">
+                <svg class="iconos__footer" width="20px" height="20px">
+                  <use
+                    href="./images/icons/symbol-defs.svg#icon-linkedin"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+
+
+
+
+
+
+         <div>
+          <ul class="list suscribe__footer">
+            <li>
+              <h3 class="title__email__footer m-0">
+                suscribase al boletín informativo
+              </h3>
+            </li>
+            <li>
+              <form class="suscribirse__from" name="suscribirse-from" action="">
+                <label for="email">
+                  <input
+                    type="email"
+                    id="email"
+                    class="suscribirse__email"
+                    placeholder="Correo Electrónico"
+                  />
+                </label>
+                <button type="submit" class="suscribe__buttton">
+                  suscribase
+                  <svg class="svg__subscribe__form" width="24" height="24">
+                    <use
+                      href="./images/icons/symbol-defs-email.svg#icon-enviar-cono"
+                    />
+                  </svg>
+                </button>
+              </form>
+            </li>
+          </ul>
+        </div>
+
+      </address>
     </footer>
   </body>
 </html>
