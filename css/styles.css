@@ -662,8 +662,8 @@ footer {
 hr {
   width: 1600px;
   height: 1px;
-  background-color: #ececec;
-  margin: 0%;
+  background-image: url(../images/Línea.jpg);
+  margin-top: -1px;
 }
 
 /*************ventana modal***************************/
