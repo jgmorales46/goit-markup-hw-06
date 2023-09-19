@@ -154,7 +154,7 @@ body {
 
 /* para revisar esta parte del codigo logos empresas que trabajan con nosotros ----------------------*/
 
-.icon__clientes {
+.customer__item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -167,7 +167,7 @@ body {
   fill: #afb1b8;
   transition: color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.container__clientes .icon__clientes:hover {
+.customer__container .customer__item:hover {
   fill: var(--main--primaryColor);
   border: 1px solid var(--main--primaryColor);
 }
@@ -311,7 +311,7 @@ header a {
   display: flex;
   gap: 30px;
 }
-.card__item {
+.team__item {
   border-radius: 0px 0px 4px 4px;
   background: #fff;
 
@@ -319,11 +319,11 @@ header a {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
-.card__item h4 {
+.team__name {
   margin: 0%;
   padding-top: 30px;
 }
-.card__item p {
+.team__description {
   margin: 0%;
   padding-top: 10px;
 }
@@ -341,7 +341,7 @@ header a {
   fill: var(--main--textColor);
 }
 
-.icons__list {
+.team-button__list {
   display: flex;
   align-items: center;
   align-content: center;
@@ -349,7 +349,7 @@ header a {
   width: 100%;
   padding: 16px 32px 30px 32px;
 }
-.icons__item {
+.team-button__item {
   width: 44px;
   height: 44px;
   display: flex;
@@ -360,7 +360,7 @@ header a {
   border-radius: 50%;
 }
 
-.icons__link {
+.team-button__link {
   background-color: #ffff;
   border-radius: 50%;
   width: 44px;
@@ -371,27 +371,27 @@ header a {
   fill: var(--main--textSecundario);
   transition: color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.icons__item:hover > .icons__link,
-.icons__item:focus > .icons__link,
-.icons__item:focus-within > .icons__link {
+.team-button__item:hover > .team-button__link,
+.team-button__item:focus > .team-button__link,
+.team-button__item:focus-within > .team-button__link {
   background-color: var(--main--primaryColor);
   cursor: pointer;
   outline: none;
 }
 
-.icons__item:hover .iconos,
-.icons__item:focus .iconos,
-.icons__item:focus-within .iconos {
+.team-button__item:hover .team__svg,
+.team-button__item:focus .team__svg,
+.team-button__item:focus-within .team__svg {
   fill: var(--main--textColor);
 }
 
 /*************************---------------------------********************************/
 
-.card {
+.team {
   background: var(--main--color--fondo--logos);
 }
 
-.card h4 {
+.team__name {
   text-align: center;
   color: var(--main--secundario);
   font-size: 16px;
@@ -400,7 +400,7 @@ header a {
   line-height: 19px;
 }
 
-.card p {
+.team__description {
   text-align: center;
   font-size: 16px;
   line-height: 19px;
@@ -411,7 +411,7 @@ header a {
 .team__list .team__item {
   width: 370px;
   flex-basis: calc((100%-30px * 2) / 3);
-  height: 502px;
+  height: 428px;
 
   /* border-radius: 0px 0px 4px 4px; */
   /* background: #FFF; */
@@ -419,7 +419,7 @@ header a {
   /* material shadow v1 */
   /* box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12); */
 }
-.img {
+.team__img {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -440,7 +440,7 @@ header a {
   color: var(--main--textSecundario);
 }
 
-.titulos-segundarios {
+.team__title {
   display: flex;
   justify-content: center;
   font-size: 36;
@@ -536,7 +536,7 @@ footer {
   padding-left: 100px;
 }
 
-.icons__list__footer {
+.footer__list {
   display: flex;
   align-items: center;
   align-content: center;
@@ -604,7 +604,7 @@ footer {
 }
 
 /*************clientes regulares 6 section***********************/
-.titulo__clientes {
+.customer__title {
   text-align: center;
   color: #212121;
   text-align: center;
@@ -615,12 +615,12 @@ footer {
   line-height: normal;
   letter-spacing: 1.08px;
 }
-.container__clientes {
+.customer__container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.items__clientes {
+.customer__list {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -962,7 +962,7 @@ hr {
 /* 
 redes sociales footer */
 
-.icons__item__footer {
+.team-button__item__footer {
   width: 44px;
   height: 44px;
   display: flex;
@@ -972,7 +972,7 @@ redes sociales footer */
   border-radius: 50%;
 }
 
-.icons__link__footer {
+.team-button__link__footer {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   width: 44px;
@@ -983,16 +983,16 @@ redes sociales footer */
   fill: white;
   transition: color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.icons__item__footer:hover > .icons__link__footer,
-.icons__item__footer:focus > .icons__link__footer,
-.icons__item__footer:focus-within > .icons__link__footer {
+.team-button__item__footer:hover > .team-button__link__footer,
+.team-button__item__footer:focus > .team-button__link__footer,
+.team-button__item__footer:focus-within > .team-button__link__footer {
   background-color: var(--main--primaryColor);
   cursor: pointer;
   outline: none;
 }
 
-.icons__item__footer:hover .iconos__footer,
-.icons__item__footer:focus .iconos__footer,
-.icons__item__footer:focus-within .iconos__footer {
+.team-button__item__footer:hover .team__svg__footer,
+.team-button__item__footer:focus .team__svg__footer,
+.team-button__item__footer:focus-within .team__svg__footer {
   fill: white;
 }
