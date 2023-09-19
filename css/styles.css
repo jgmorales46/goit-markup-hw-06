@@ -90,12 +90,12 @@ body {
 
 /*  estilos header links y botones */
 /*estilo links header  */
-.navigation__container {
+.header__navegation {
   display: flex;
   justify-content: space-between;
 }
 
-.hero__navigation {
+.header__list-menu {
   display: flex;
   column-gap: 50px;
   justify-content: center;
@@ -103,11 +103,11 @@ body {
   padding: 25px;
   transition: color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.hero__navigation a:hover {
+.header__list-menu a:hover {
   color: var(--main--primaryColor);
 }
 
-.hero__contact {
+.header__list-contact {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,38 +117,38 @@ body {
 /* para revisar esta parte del codigo email contactos----------------------*/
 
 /* estilos para svg email y texto email:hover*/
-.gallery__item .email {
+.header__item-contact .email {
   fill: #757575;
   margin-right: 10px;
   transition: color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.gallery__item:hover > .icon,
-.gallery__item:focus > .icon,
-.gallery__item:focus-within > .icon {
+.header__item-contact:hover > .icon,
+.header__item-contact:focus > .icon,
+.header__item-contact:focus-within > .icon {
   color: var(--main--primaryColor);
 }
 
-.gallery__item:hover .email,
-.gallery__item:focus .email,
-.gallery__item:focus-within .email {
+.header__item-contact:hover .email,
+.header__item-contact:focus .email,
+.header__item-contact:focus-within .email {
   fill: var(--main--primaryColor);
 }
 
 /* estilos para svg telefono y texto telefono:hover*/
-.gallery__item .telefono {
+.header__item-contact .telefono {
   fill: #757575;
   margin-right: 10px;
   transition: color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.gallery__item:hover > .icon,
-.gallery__item:focus > .icon,
-.gallery__item:focus-within > .icon {
+.header__item-contact:hover > .icon,
+.header__item-contact:focus > .icon,
+.header__item-contact:focus-within > .icon {
   color: var(--main--primaryColor);
 }
 
-.gallery__item:hover .telefono,
-.gallery__item:focus .telefono,
-.gallery__item:focus-within .telefono {
+.header__item-contact:hover .telefono,
+.header__item-contact:focus .telefono,
+.header__item-contact:focus-within .telefono {
   fill: var(--main--primaryColor);
 }
 
@@ -174,7 +174,7 @@ body {
 
 /***************************************---------------*******************/
 /* Font Stylesk */
-.link-font-style {
+.header__link {
   font-weight: 600;
   font-size: 15px;
   line-height: 1.36;
@@ -496,7 +496,7 @@ footer {
   line-height: 30px;
 }
 
-.header_menu.current {
+.header__menu.current {
   color: var(--main--primaryColor);
 }
 
