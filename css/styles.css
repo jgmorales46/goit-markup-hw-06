@@ -56,7 +56,7 @@
   padding: 40px 0;
 }
 
-.hero {
+.our-service {
   /* background-color: var(--main--backgraundSecundario); */
 
   background-image: linear-gradient(
@@ -196,7 +196,7 @@ header a {
   line-height: 16px;
   font-weight: 500;
 }
-.encuentranos {
+.footer__container-title {
   color: var(--main--textColor);
   font-family: Roboto;
   font-size: 14px;
@@ -210,13 +210,13 @@ header a {
 
 /*  estilos para titulo y boton debajo del titulo segundo sectiom*/
 
-.title {
+.our-service__title {
   font-size: 44px;
   line-height: 60px;
   color: var(--main--textColor);
 }
 
-.flex__center {
+.our-service__container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -250,7 +250,7 @@ header a {
   color: var(--main--textColor);
 }
 
-.hero__texts {
+.our-service__text {
   color: var(--detail-color);
   display: flex;
   flex-direction: column;
@@ -259,12 +259,12 @@ header a {
 
 /*estilos tercera seccion*/
 
-.about__gallery {
+.about__list {
   display: flex;
   gap: 30px;
 }
 
-.contenedor__logos {
+.about__container {
   display: flex;
   align-content: center;
   align-items: center;
@@ -274,26 +274,26 @@ header a {
   height: 120px;
   background: var(--main--color--fondo--logos);
 }
-.icon__logo__detalles {
+.about__svg {
   width: 70px;
   height: 70px;
 }
 
 /* estilos cuarta section imagenes de referencia*/
 
-.gallery__images {
+.what-we-do__list {
   display: flex;
   gap: 30px;
 }
 
-.dedicamos {
+.what-we-do__item {
   background-color: #212121;
   position: relative;
   width: 370px;
   height: 294px;
 }
 
-.dedicamos-text {
+.what-we-do__item-text {
   width: 370px;
   height: 70px;
   position: absolute;
@@ -427,20 +427,20 @@ header a {
 
 /*------------------------------------------------------------------------------------------------------------*/
 
-.parrafos h3 {
+.about__text {
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
   color: var(--main--secundario);
 }
-.parrafos p {
+.about__paragraph {
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
   color: var(--main--textSecundario);
 }
 
-.team__title {
+.what-we-do__title {
   display: flex;
   justify-content: center;
   font-size: 36;
@@ -484,13 +484,13 @@ footer {
 
 /****************************************************************************************estilos pagina portfolio******************************************************/
 
-.article h4 {
+.card__portfolio-title {
   font-size: 18px;
   color: #212121;
   line-height: 30px;
 }
 
-.article p {
+.card__portfolio-paragraph {
   font-size: 16px;
   color: var(--main--textSecundario);
   line-height: 30px;
@@ -515,28 +515,28 @@ footer {
   border-radius: 2px;
 } */
 
-.box_footer {
+.footer__contacts {
   display: flex;
   flex-direction: column;
 }
-.box_footer a {
+.footer__contacts a {
   color: var(--main--secundario);
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
   transition: color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.box_footer a:hover {
+.footer__contacts a:hover {
   color: var(--main--primaryColor);
 }
-.text__footer p {
+.footer__text p {
   margin: 0px;
 }
-.container__redes__footer {
+.footer__container-redes {
   padding-left: 100px;
 }
 
-.footer__list {
+.footer__container-list {
   display: flex;
   align-items: center;
   align-content: center;
@@ -546,25 +546,25 @@ footer {
 
 /* -------------------------------------------_______________estilos portafolio menu__________________________________________-----------------------------------*/
 
-.buttom__portafolio {
+.button__list {
   display: flex;
   gap: 15px;
   justify-content: center;
 }
 
-.container__botones__portafolio {
+.button__portfolio {
   padding-top: 105px;
 }
 
 /*____________estilod portafolio imagenes__________________________________________________*/
 
-.container__porfolio {
+.card__portfolio-list {
   display: flex;
   flex-wrap: wrap;
   gap: 25px; /* verificar gap en cambios mas adelante*/
 }
 
-.item {
+.card__portfolio-item {
   width: 375px;
 
   flex-basis: calc((100% - 60px) / 3);
@@ -574,12 +574,12 @@ footer {
   transition: color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.item:hover {
+.card__portfolio-item:hover {
   box-shadow: 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
-.item h4 {
+.card__portfolio-title {
   padding-left: 25px;
   color: var(--main--secundario);
   font-family: Roboto;
@@ -591,7 +591,7 @@ footer {
   letter-spacing: 1.08px;
 }
 
-.item p {
+.card__portfolio-paragraph {
   padding-left: 25px;
   color: var(--main--textSecundario);
   font-family: Roboto;
@@ -629,20 +629,21 @@ footer {
 
 /***********************************overlay******/
 
-.box {
+.card__portfolio-box {
   position: relative;
 
   overflow: hidden;
 }
 
-.box:hover .overlay {
+.card__portfolio-box:hover .overlay {
   transform: translatex(0);
 }
 
 .overlay {
   position: absolute;
   top: 0;
-
+  padding: 63px 24px;
+  text-align: center;
   height: 100%;
   background: var(--main--primaryColor);
   transform: translatey(110%);
@@ -888,11 +889,11 @@ hr {
 }
 
 /* caja email footer */
-.suscribe__footer {
+.footer__suscribe {
   margin-left: 53px;
 }
 
-.title__email__footer {
+.footer__suscribe-title {
   color: white;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -904,11 +905,11 @@ hr {
   text-transform: uppercase;
 }
 
-.suscribirse__from {
+.footer__form {
   display: flex;
   gap: 12px;
 }
-.suscribirse__email {
+.footer__form-email {
   width: 358px;
   height: 50px;
 
@@ -921,11 +922,11 @@ hr {
   color: white;
 }
 
-.suscribirse__email:hover {
+.footer__form-email:hover {
   border: 1px solid var(--main--primaryColor);
 }
 
-.suscribe__buttton {
+.footer__form-button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -946,23 +947,23 @@ hr {
   letter-spacing: 0.3px;
 }
 
-.suscribe__buttton:hover {
+.footer__form-button:hover {
   cursor: pointer;
 
   border-radius: 4px;
   color: #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
-.svg__subscribe__form {
+.footer__form-svg {
   fill: var(--main--textSecundario);
 }
-.suscribe__buttton:hover > .svg__subscribe__form {
+.footer__form-button:hover > .footer__form-svg {
   fill: white;
 }
 /* 
 redes sociales footer */
 
-.team-button__item__footer {
+.footer__container-item {
   width: 44px;
   height: 44px;
   display: flex;
@@ -972,7 +973,7 @@ redes sociales footer */
   border-radius: 50%;
 }
 
-.team-button__link__footer {
+.footer__container-link {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   width: 44px;
@@ -983,16 +984,16 @@ redes sociales footer */
   fill: white;
   transition: color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.team-button__item__footer:hover > .team-button__link__footer,
-.team-button__item__footer:focus > .team-button__link__footer,
-.team-button__item__footer:focus-within > .team-button__link__footer {
+.footer__container-item:hover > .footer__container-link,
+.footer__container-item:focus > .footer__container-link,
+.footer__container-item:focus-within > .footer__container-link {
   background-color: var(--main--primaryColor);
   cursor: pointer;
   outline: none;
 }
 
-.team-button__item__footer:hover .team__svg__footer,
-.team-button__item__footer:focus .team__svg__footer,
-.team-button__item__footer:focus-within .team__svg__footer {
+.footer__container-item:hover .footer__container-svg,
+.footer__container-item:focus .footer__container-svg,
+.footer__container-item:focus-within .footer__container-svg {
   fill: white;
 }
