@@ -341,7 +341,7 @@ header a {
   fill: var(--main--textColor);
 }
 
-.team-button__list {
+.team-social__list {
   display: flex;
   align-items: center;
   align-content: center;
@@ -349,7 +349,7 @@ header a {
   width: 100%;
   padding: 16px 32px 30px 32px;
 }
-.team-button__item {
+.team-social__item {
   width: 44px;
   height: 44px;
   display: flex;
@@ -360,7 +360,7 @@ header a {
   border-radius: 50%;
 }
 
-.team-button__link {
+.team-social__link {
   background-color: #ffff;
   border-radius: 50%;
   width: 44px;
@@ -371,17 +371,17 @@ header a {
   fill: var(--main--textSecundario);
   transition: color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.team-button__item:hover > .team-button__link,
-.team-button__item:focus > .team-button__link,
-.team-button__item:focus-within > .team-button__link {
+.team-social__item:hover > .team-social__link,
+.team-social__item:focus > .team-social__link,
+.team-social__item:focus-within > .team-social__link {
   background-color: var(--main--primaryColor);
   cursor: pointer;
   outline: none;
 }
 
-.team-button__item:hover .team__svg,
-.team-button__item:focus .team__svg,
-.team-button__item:focus-within .team__svg {
+.team-social__item:hover .team__svg,
+.team-social__item:focus .team__svg,
+.team-social__item:focus-within .team__svg {
   fill: var(--main--textColor);
 }
 
@@ -440,7 +440,7 @@ header a {
   color: var(--main--textSecundario);
 }
 
-.what-we-do__title {
+.team__title {
   display: flex;
   justify-content: center;
   font-size: 36;
